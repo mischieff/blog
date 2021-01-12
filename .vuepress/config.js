@@ -28,6 +28,10 @@ module.exports = {
   markdown: {
     lineNumbers: true, // 代码块显示行号
   },
+  host: 'localhost', // ip
+  port: 8098, // 端口
+  evergreen: true, // 浏览器兼容性
+  // 使用的主题
   themeConfig: {
     logo: '/assets/images/logo.png',
     sidebar: 'auto', // 按照md标题，自动生成侧边栏
@@ -74,4 +78,18 @@ module.exports = {
       ],
     },
   },
+  plugins: [
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          // 更新时间格式化插件
+          // 不要忘了安装 moment
+          const moment = require('moment');
+          moment.locale('zh-cn');
+          return moment(timestamp).format('LLL');
+        },
+      },
+    ],
+  ],
 };
