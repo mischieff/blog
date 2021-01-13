@@ -31,6 +31,7 @@ module.exports = {
   host: 'localhost', // ip
   port: 8098, // 端口
   evergreen: true, // 浏览器兼容性
+  theme: 'antdocs', // 主题
   // 使用的主题
   themeConfig: {
     logo: '/assets/images/logo.png',

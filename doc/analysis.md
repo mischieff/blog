@@ -27,10 +27,10 @@
 
    
 
-2. **全局安装VuePress**
+2. **本地安装VuePress**
 
    ```node
-   npm install -g vuepress
+   npm install -D vuepress
    ```
 
    
@@ -376,16 +376,17 @@
    ![image-20210112160951795](/blog/assets/images/image-20210112160951795.png)
    ```
 
-2.   **更换主题色**
+2.   **配置颜色及样式**
 
    > 在`.vuepress/styles/palette`.创建主题文件，修改主题配置文件。
 
-   ```stylus
+   ```css
+   /*********************************** 全局配置 ***************************************/
    // 颜色
-   $accentColor = #3eaf7c  // 默认主题颜色
+   $accentColor = #42b983  // 默认主题颜色
    $textColor = #2c3e50    // 默认字体颜色
    $borderColor = #eaecef  // 默认边框颜色
-   $codeBgColor = #282c34  // 默认代码背景颜色
+   $codeBgColor = #f9f9f9  // 默认代码背景颜色
    $arrowBgColor = #ccc    // 默认箭头颜色
    $badgeTipColor = #42b983   
    $badgeWarningColor = darken(#ffe564, 35%)
@@ -402,11 +403,65 @@
    $MQMobile = 719px
    $MQMobileNarrow = 419px
    
+
+   
+/*********************************** 更改样式 ***************************************/
+   // 标注
+   blockquote{
+       border-left: 4px solid #42b983;
+       padding: 10px 15px;
+       color: #777;
+       font-size: 15px;
+       background-color: rgba(66, 185, 131, .1);
+       code{
+           margin: 0 2px!important;
+           padding: 2px 4px!important;
+           border-radius: 2px!important;
+           font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important;
+           font-size: 0.92rem!important;
+           color: #e96900!important;
+           background-color: #f8f8f8!important;
+       }
+   }
+   
+   // 代码块
+   div[class*="language-"].line-numbers-mode::after{
+       border:none;
+   }
+   div[class*="language-"].line-numbers-mode .line-numbers-wrapper{
+       color:#999;
+   }
+   .theme-default-content pre code, .theme-default-content pre[class*="language-"] code{
+       color:#f08d49;
+   }
+   
+   li{
+       font-size:15px;
+   }
+   ```
+   
+   
+   
+3.  **更换主题**
+
+   > 以阿里的`AntDocs`为例，确保vuepress为`本地安装`。
+   >
+   > 首先安装`vuepress-theme-antdocs`主题
+
+   ```json
+   // 安装主题
+   npm i vuepress-theme-antdocs
    ```
 
+   > 打开 `.vuepress/config.js` 文件，然后在合适位置引用它
 
-
-
+   ```js
+   module.exports = {
+     ...
+     theme: 'antdocs',
+     ...
+   }
+   ```
 
 
 
