@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Mischieff',
+  title: 'Mischieff技术分享交流',
   base: '/blog/',
   description: '前端技术分享交流会',
   head: [
