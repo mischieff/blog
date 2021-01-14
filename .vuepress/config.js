@@ -46,8 +46,20 @@ module.exports = {
         text: '文件',
         items: [
           {
-            text: '前端分析交流',
-            link: '/doc/analysis',
+            text: '《Markdown搭建前端博客（VuePress）》',
+            link: '/doc/VuePress',
+          },
+          {
+            text: '《Typora的使用（markdown标记语言）》',
+            link: '/doc/Typora',
+          },
+          {
+            text: '《Electron桌面应用初识》',
+            link: '/doc/Electron',
+          },
+          {
+            text: '《nginx代理vue技术分享》',
+            link: '/doc/Nginx',
           },
           {
             text: 'Emoji 表情',
@@ -67,8 +79,20 @@ module.exports = {
           collapsable: false,
           children: [
             {
-              title: '前端分析交流',
-              path: '/doc/analysis',
+              title: '《Markdown搭建前端博客（VuePress）》',
+              path: '/doc/VuePress',
+            },
+            {
+              title: '《Typora的使用（markdown标记语言）》',
+              path: '/doc/Typora',
+            },
+            {
+              title: '《Electron桌面应用初识》',
+              path: '/doc/Electron',
+            },
+            {
+              title: '《nginx代理vue技术分享》',
+              path: '/doc/Nginx',
             },
             {
               title: 'Emoji 表情',

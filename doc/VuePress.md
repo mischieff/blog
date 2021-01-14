@@ -90,7 +90,7 @@
 
    > 配置后，第9步运行完成，对应的首页渲染效果为：
 
-   ![image-20210111182529913](/blog/assets/github/image-20210111182529913.png)
+   ![image-20210111182529913](/blog/assets/images/VuePress/image-20210111182529913.png)
 
    
 
@@ -216,11 +216,11 @@
 
    > 配置后，第9步运行完成，对应的head渲染效果为：
 
-   ![image-20210111180250656](/blog/assets/github/image-20210111180250656.png)
+   ![image-20210111180250656](/blog/assets/images/VuePress/image-20210111180250656.png)
 
    > 配置后，第9步运行完成，对应的导航菜单渲染效果为：
 
-   ![image-20210111180100453](/blog/assets/github/image-20210111180100453.png)
+   ![image-20210111180100453](/blog/assets/images/VuePress/image-20210111180100453.png)
 
    
 
@@ -264,7 +264,7 @@
 
    > 登录自己的Github，点击如图所示`新建`按钮，或者点击右上角`+按钮`进行新建。
 
-   ![image-20210112114930604](/blog/assets/github/image-20210112114930604.png)
+   ![image-20210112114930604](/blog/assets/images/VuePress/image-20210112114930604.png)
 
    
 
@@ -274,7 +274,7 @@
    >
    > **注意**：**`创建的项目名和文件名一致`**
 
-   ![image-20210112115200943](/blog/assets/github/image-20210112115200943.png)
+   ![image-20210112115200943](/blog/assets/images/VuePress/image-20210112115200943.png)
 
    
 
@@ -341,7 +341,7 @@
 
    > 打开Git，进入刚上传的目录中，点击`Settings`进行配置。
 
-   ![image-20210112160144554](/blog/assets/github/image-20210112175336735.png)
+   ![image-20210112160144554](/blog/assets/images/VuePress/image-20210112175336735.png)
 
    
 
@@ -349,7 +349,7 @@
    >
    > 当出现如图所示绿勾时 :heavy_check_mark: 说明部署成功。
 
-   ![image-20210112160343301](/blog/assets/github/image-20210112160343301.png)
+   ![image-20210112160343301](/blog/assets/images/VuePress/image-20210112160343301.png)
 
    
 
@@ -357,11 +357,11 @@
 
    > 此刻就可以进入自己的博客**`https://mischieff.github.io/blog/`**，尽情的欣赏自己的作品吧！！！
 
-![image-20210112160929682](/blog/assets/github/image-20210112160929682.png)
+![image-20210112160929682](/blog/assets/images/VuePress/image-20210112160929682.png)
 
 
 
-![image-20210112160951795](/blog/assets/github/image-20210112160951795.png)
+![image-20210112160951795](/blog/assets/images/VuePress/image-20210112160951795.png)
 
 
 ### 五、注意事项
@@ -373,7 +373,7 @@
    > 更改路径 `/blog/assets/images/`
 
    ```markdown
-   ![image-20210112160951795](/blog/assets/images/image-20210112160951795.png)
+   ![image-20210112160951795](/blog/assets/images/VuePress/image-20210112160951795.png)
    ```
 
 2.   **配置颜色及样式**
