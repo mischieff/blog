@@ -2,7 +2,7 @@
 
 > 程序员一定要有自己的博客，哪怕是`生活博客`。
 
-### 一、介绍
+## 一、介绍
 
 > **VuePress** 是尤雨溪发布的一个全新的基于 vue 的静态网站生成器，实际上就是一个 vue 的 spa 应用，内置 webpack，可以用来写文档。详见 [VuePress中文网](https://vuepress.docschina.org/)。
 >
@@ -15,7 +15,7 @@
 - 更好的兼容、扩展 Markdown 语法
 - 响应式布局，PC端、手机端
 
-### 二、开始创建
+## 二、开始创建
 
 1. **创建博客文件**
 
@@ -248,7 +248,7 @@
 
    
 
-### 四、部署前工作
+## 三、部署
 
 > 现在我们要把本地的内容推送到某个服务器上，这样只要有网络，就可以随时随地看自己的网站了。一般来说，有两种方案可供选择：
 
@@ -364,7 +364,7 @@
 ![image-20210112160951795](/blog/assets/images/VuePress/image-20210112160951795.png)
 
 
-### 五、注意事项
+## 四、其他
 
 1. **图片**
 
@@ -372,9 +372,11 @@
    >
    > 更改路径 `/blog/assets/images/`
 
-   ```markdown
-   ![image-20210112160951795](/blog/assets/images/VuePress/image-20210112160951795.png)
+   ```json
+   ![image-20210112160951795](/blog/assets/images/image-20210112160951795.png)
    ```
+
+   
 
 2.   **配置颜色及样式**
 
@@ -402,46 +404,43 @@
    $MQNarrow = 959px   
    $MQMobile = 719px
    $MQMobileNarrow = 419px
-   
-
-   
-/*********************************** 更改样式 ***************************************/
+   /*********************************** 更改样式 ***************************************/
    // 标注
-   blockquote{
-       border-left: 4px solid #42b983;
-       padding: 10px 15px;
-       color: #777;
-       font-size: 15px;
-       background-color: rgba(66, 185, 131, .1);
-       code{
-           margin: 0 2px!important;
-           padding: 2px 4px!important;
-           border-radius: 2px!important;
-           font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important;
-           font-size: 0.92rem!important;
-           color: #e96900!important;
-           background-color: #f8f8f8!important;
-       }
-   }
+      blockquote{
+          border-left: 4px solid #42b983;
+          padding: 10px 15px;
+          color: #777;
+          font-size: 15px;
+          background-color: rgba(66, 185, 131, .1);
+          code{
+              margin: 0 2px!important;
+              padding: 2px 4px!important;
+              border-radius: 2px!important;
+              font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important;
+              font-size: 0.92rem!important;
+              color: #e96900!important;
+              background-color: #f8f8f8!important;
+          }
+      }
    
-   // 代码块
-   div[class*="language-"].line-numbers-mode::after{
-       border:none;
-   }
-   div[class*="language-"].line-numbers-mode .line-numbers-wrapper{
-       color:#999;
-   }
-   .theme-default-content pre code, .theme-default-content pre[class*="language-"] code{
-       color:#f08d49;
-   }
+      // 代码块
+      div[class*="language-"].line-numbers-mode::after{
+          border:none;
+      }
+      div[class*="language-"].line-numbers-mode .line-numbers-wrapper{
+          color:#999;
+      }
+      .theme-default-content pre code, .theme-default-content pre[class*="language-"] code{
+          color:#f08d49;
+      }
    
-   li{
-       font-size:15px;
-   }
+      li{
+          font-size:15px;
+      }
    ```
-   
-   
-   
+
+
+
 3.  **更换主题**
 
    > 以阿里的`AntDocs`为例，确保vuepress为`本地安装`。
@@ -452,17 +451,21 @@
    // 安装主题
    npm i vuepress-theme-antdocs
    ```
-
-   > 打开 `.vuepress/config.js` 文件，然后在合适位置引用它
-
-   ```js
-   module.exports = {
-     ...
-     theme: 'antdocs',
-     ...
-   }
+   
+   > 打开 `.vuepress/config.js` 文件，然后在合适位置引用它。
+   
+   ```json
+     module.exports = {
+        ...
+        theme: 'antdocs',
+        ...
+      }
    ```
+   
+   
 
+4. **vuePress二级目录**
 
+   > 详情页右侧二级目录，只能显示Markdown中的二级标签，即`##`两个井号的目录
 
 

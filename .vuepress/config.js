@@ -50,6 +50,10 @@ module.exports = {
             link: '/doc/VuePress',
           },
           {
+            text: '《版本管理git回滚、重置、提交以及SourceTree复杂操作》',
+            link: '/doc/SourceTree',
+          },
+          {
             text: '《Typora的使用（markdown标记语言）》',
             link: '/doc/Typora',
           },
@@ -81,6 +85,10 @@ module.exports = {
             {
               title: '《Markdown搭建前端博客（VuePress）》',
               path: '/doc/VuePress',
+            },
+            {
+              title: '《版本管理git回滚、重置、提交以及SourceTree复杂操作》',
+              path: '/doc/SourceTree',
             },
             {
               title: '《Typora的使用（markdown标记语言）》',
