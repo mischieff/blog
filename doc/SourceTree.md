@@ -112,7 +112,7 @@ git clone http://gitlab.zq.com:8888/fattan/frontend.git
 
 ![img](/blog/assets/images/SourceTree/git-clipboard5.png)
 
-修改完成后 按下`Esc`键  使用`:wq`退出不要忘了前面的
+修改完成后 按下`Esc`键  使用`:wq`退出不要忘了前面的`:`
 
 ### 7、代码回滚
 
