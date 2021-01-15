@@ -45,10 +45,10 @@ module.exports = {
       {
         text: '文件',
         items: [
-          {
-            text: '《Markdown搭建前端博客（VuePress）》',
-            link: '/doc/VuePress',
-          },
+          // {
+          //   text: '《Markdown搭建前端博客（VuePress）》',
+          //   link: '/doc/VuePress',
+          // },
           {
             text: '《版本管理git回滚、重置、提交以及SourceTree复杂操作》',
             link: '/doc/SourceTree',
@@ -82,10 +82,10 @@ module.exports = {
           title: '文件',
           collapsable: false,
           children: [
-            {
-              title: '《Markdown搭建前端博客（VuePress）》',
-              path: '/doc/VuePress',
-            },
+            // {
+            //   title: '《Markdown搭建前端博客（VuePress）》',
+            //   path: '/doc/VuePress',
+            // },
             {
               title: '《版本管理git回滚、重置、提交以及SourceTree复杂操作》',
               path: '/doc/SourceTree',
