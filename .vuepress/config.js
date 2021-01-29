@@ -50,6 +50,14 @@ module.exports = {
           //   link: '/doc/VuePress',
           // },
           {
+            text: '《uniapp初始》',
+            link: '/doc/Uniapp',
+          },
+          {
+            text: '《React初始》',
+            link: '/doc/React',
+          },
+          {
             text: '《版本管理git回滚、重置、提交以及SourceTree复杂操作》',
             link: '/doc/SourceTree',
           },
@@ -87,6 +95,14 @@ module.exports = {
             //   path: '/doc/VuePress',
             // },
             {
+              title: '《uniapp初始》',
+              path: '/doc/Uniapp'
+            },
+            {
+              title: '《React初识》',
+              path: '/doc/React'
+            },
+            {
               title: '《版本管理git回滚、重置、提交以及SourceTree复杂操作》',
               path: '/doc/SourceTree',
             },
@@ -109,6 +125,7 @@ module.exports = {
           ],
         },
       ],
+      sidebarDepth: 4
     },
   },
   plugins: [
