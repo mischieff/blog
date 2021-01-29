@@ -1,5 +1,11 @@
 # 《版本管理git回滚、重置、提交以及SourceTree复杂操作》
 
+<div class="cc-speaker-content color2">
+       <span class="cc-speaker">主讲：蔡老师 </span>
+       <span class="cc-wrap"> 
+              <span class="cc-stage">第六期</span>
+       </span>
+</div>   
 
 ## 一、GIT简介
 

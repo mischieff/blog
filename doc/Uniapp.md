@@ -1,5 +1,13 @@
 <h1>《Uniapp初识》</h1>
 
+<div class="cc-speaker-content color1">
+       <span class="cc-speaker">主讲：胡老师</span>
+       <span class="cc-wrap"> 
+              <span class="cc-stage">第八期</span>
+       </span>
+</div>    
+
+
 ## 一、Uniapp简介
 
 >`uni-app` 是一个使用 [Vue.js](https://vuejs.org/) 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。>

@@ -1,5 +1,12 @@
 # 《Typora的使用（markdown标记语言）》
 
+<div class="cc-speaker-content color6">
+       <span class="cc-speaker">主讲：Mischieff</span>
+       <span class="cc-wrap"> 
+              <span class="cc-stage">第五期</span>
+       </span>
+</div>   
+
 > 简介：Typora是一款轻便简洁的Markdown编辑器
 >
 > 特点：简单、便捷、样式丰富、非常适用程序员，可导出格式PDF、Html、Word、png等多种格式

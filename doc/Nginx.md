@@ -1,4 +1,11 @@
-# nginx代理vue
+# 《nginx代理vue》
+
+<div class="cc-speaker-content color5">
+       <span class="cc-speaker">主讲：Mischieff</span>
+       <span class="cc-wrap"> 
+              <span class="cc-stage">第三期</span>
+       </span>
+</div>   
 
 ## 一、nginx代理vue的意义
 vue打包后,因为开发环境设置代理 **`proxy`** 的原因, 使得访问打包页面 **`dist/index.html`** 请求数据出现跨域。</br>
