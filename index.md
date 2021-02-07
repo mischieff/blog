@@ -1,10 +1,10 @@
 ---
 home: true
 heroImage: /assets/images/logo.png
-heroText: 博客标题
-tagline: 博客副标题
+heroText: 前端技术分享交流会
+tagline: 内周更新（放假除外）
 actionText: 快速阅读
-actionLink: /doc/analysis
+actionLink: /doc/Electron
 features:
 - title: 主页
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。

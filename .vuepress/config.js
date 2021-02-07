@@ -45,16 +45,20 @@ module.exports = {
       {
         text: '文件',
         items: [
-          // {
-          //   text: '《Markdown搭建前端博客（VuePress）》',
-          //   link: '/doc/VuePress',
-          // },
           {
-            text: '《uniapp初始》',
+            text: '《Markdown搭建前端博客（VuePress）》',
+            link: '/doc/VuePress',
+          },
+          {
+            text: '《Nodejs初识》',
+            link: '/doc/Nodejs',
+          },
+          {
+            text: '《uniapp初识》',
             link: '/doc/Uniapp',
           },
           {
-            text: '《React初始》',
+            text: '《React初识》',
             link: '/doc/React',
           },
           {
@@ -90,12 +94,16 @@ module.exports = {
           title: '文件',
           collapsable: false,
           children: [
-            // {
-            //   title: '《Markdown搭建前端博客（VuePress）》',
-            //   path: '/doc/VuePress',
-            // },
             {
-              title: '《uniapp初始》',
+              title: '《Markdown搭建前端博客（VuePress）》',
+              path: '/doc/VuePress',
+            },
+            {
+              title: '《Nodejs初识》',
+              path: '/doc/Nodejs'
+            },
+            {
+              title: '《uniapp初识》',
               path: '/doc/Uniapp'
             },
             {
