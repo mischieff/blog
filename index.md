@@ -2,7 +2,7 @@
 home: true
 heroImage: /assets/images/logo.png
 heroText: 前端技术分享交流会
-tagline: 内周更新（放假除外）
+#tagline: 内周更新（放假除外）
 actionText: 快速阅读
 actionLink: /doc/Electron
 features:
