@@ -46,6 +46,10 @@ module.exports = {
         text: '文件',
         items: [
           {
+            text: '《微前端（qiankun）》',
+            link: '/doc/Qiankun',
+          },
+          {
             text: '《Markdown搭建前端博客（VuePress）》',
             link: '/doc/VuePress',
           },
@@ -78,7 +82,7 @@ module.exports = {
             link: '/doc/Nginx',
           },
           {
-            text: 'Emoji 表情',
+            text: '《Emoji 表情》',
             link: '/doc/emoji',
           },
         ],
@@ -94,6 +98,10 @@ module.exports = {
           title: '文件',
           collapsable: false,
           children: [
+            {
+              title: '《微前端（Qiankun）》',
+              path: '/doc/Qiankun',
+            },
             {
               title: '《Markdown搭建前端博客（VuePress）》',
               path: '/doc/VuePress',
@@ -127,7 +135,7 @@ module.exports = {
               path: '/doc/Nginx',
             },
             {
-              title: 'Emoji 表情',
+              title: '《Emoji 表情》',
               path: '/doc/emoji',
             },
           ],

@@ -1,5 +1,12 @@
 ## 一. node.js简述
 
+<div class="cc-speaker-content color7">
+       <span class="cc-speaker">主讲：石老师</span>
+       <span class="cc-wrap"> 
+              <span class="cc-stage">第九期</span>
+       </span>
+</div> 
+
 ### 1. Node环境的搭建
 
 > 官网：https://nodejs.org/en/

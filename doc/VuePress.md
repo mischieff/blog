@@ -1,4 +1,10 @@
 # 前端博客（VuePress）
+<div class="cc-speaker-content color8">
+       <span class="cc-speaker">主讲：Mischieff</span>
+       <span class="cc-wrap"> 
+              <span class="cc-stage">第十期</span>
+       </span>
+</div> 
 
 > 程序员一定要有自己的博客，哪怕是`生活博客`。
 
