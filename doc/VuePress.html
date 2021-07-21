@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>前端博客（VuePress） | Mischieff技术分享交流</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/blog/assets/images/logo.png">
+    <meta name="description" content="前端技术分享交流会">
+    <meta name="author" content="Mischieff">
+    <meta name="keywords" content="vue,前端技术分享交流会,mis">
+    <link rel="preload" href="/blog/assets/css/0.styles.ce5bf294.css" as="style"><link rel="preload" href="/blog/assets/js/app.d0acf852.js" as="script"><link rel="preload" href="/blog/assets/js/2.72c4cc30.js" as="script"><link rel="preload" href="/blog/assets/js/13.d6ea9d45.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.5014fd50.js"><link rel="prefetch" href="/blog/assets/js/11.8b9de7e2.js"><link rel="prefetch" href="/blog/assets/js/12.b8a53940.js"><link rel="prefetch" href="/blog/assets/js/14.2377e15c.js"><link rel="prefetch" href="/blog/assets/js/15.57c75a61.js"><link rel="prefetch" href="/blog/assets/js/3.6915d159.js"><link rel="prefetch" href="/blog/assets/js/4.2b1304f1.js"><link rel="prefetch" href="/blog/assets/js/5.07d818df.js"><link rel="prefetch" href="/blog/assets/js/6.acdb2a2d.js"><link rel="prefetch" href="/blog/assets/js/7.22a77f1e.js"><link rel="prefetch" href="/blog/assets/js/8.029b509f.js"><link rel="prefetch" href="/blog/assets/js/9.114dad7d.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.ce5bf294.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="ant-row"><div class="sidebar-button"><i aria-label="icon: bars" class="anticon anticon-bars"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="bars" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"></path></svg></i> <span></span></div> <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a href="/blog/" class="router-link-active home-link"><img src="/blog/assets/images/logo.png" alt="Mischieff技术分享交流" class="logo"> <span class="site-name">Mischieff技术分享交流</span></a> <div class="search-box mobile-search"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div> <div class="ant-col ant-col-xs-0 ant-col-sm-0 ant-col-md-18 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><ul role="menu" id="nav" class="ant-menu ant-menu-horizontal ant-menu-root ant-menu-light"><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/blog/" class="router-link-active">
+          主页
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-submenu-selected"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          文件
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="https://github.com/mischieff" target="_blank">
+          Github
+          <i aria-label="icon: link" class="anticon anticon-link"><svg viewBox="64 64 896 896" focusable="false" data-icon="link" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"></path></svg></i></a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="visibility:hidden;position:absolute;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li></ul> <!----></nav></div></div> <!----></header> <aside class="sidebar"><!----> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>文件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/doc/Qiankun.html" title="《微前端（Qiankun）》" class="sidebar-link">《微前端（Qiankun）》</a></li><li><a href="/blog/doc/VuePress.html" aria-current="page" title="《Markdown搭建前端博客（VuePress）》" class="active sidebar-link">《Markdown搭建前端博客（VuePress）》</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/doc/VuePress.html#一、介绍" title="一、介绍" class="sidebar-link">一、介绍</a></li><li class="sidebar-sub-header"><a href="/blog/doc/VuePress.html#二、开始创建" title="二、开始创建" class="sidebar-link">二、开始创建</a></li><li class="sidebar-sub-header"><a href="/blog/doc/VuePress.html#三、部署" title="三、部署" class="sidebar-link">三、部署</a></li><li class="sidebar-sub-header"><a href="/blog/doc/VuePress.html#四、其他" title="四、其他" class="sidebar-link">四、其他</a></li></ul></li><li><a href="/blog/doc/Nodejs.html" title="《Nodejs初识》" class="sidebar-link">《Nodejs初识》</a></li><li><a href="/blog/doc/Uniapp.html" title="《uniapp初识》" class="sidebar-link">《uniapp初识》</a></li><li><a href="/blog/doc/React.html" title="《React初识》" class="sidebar-link">《React初识》</a></li><li><a href="/blog/doc/SourceTree.html" title="《版本管理git回滚、重置、提交以及SourceTree复杂操作》" class="sidebar-link">《版本管理git回滚、重置、提交以及SourceTree复杂操作》</a></li><li><a href="/blog/doc/Typora.html" title="《Typora的使用（markdown标记语言）》" class="sidebar-link">《Typora的使用（markdown标记语言）》</a></li><li><a href="/blog/doc/Electron.html" title="《Electron桌面应用初识》" class="sidebar-link">《Electron桌面应用初识》</a></li><li><a href="/blog/doc/Nginx.html" title="《nginx代理vue技术分享》" class="sidebar-link">《nginx代理vue技术分享》</a></li><li><a href="/blog/doc/emoji.html" title="《Emoji 表情》" class="sidebar-link">《Emoji 表情》</a></li></ul></section></li></ul></aside> <main class="page"> <div class="theme-antdocs-content content__default"><h1 id="前端博客-vuepress"><a href="#前端博客-vuepress" class="header-anchor">#</a> 前端博客（VuePress）</h1> <div class="cc-speaker-content color8"><span class="cc-speaker">主讲：Mischieff</span> <span class="cc-wrap"><span class="cc-stage">第十期</span></span></div> <blockquote><p>程序员一定要有自己的博客，哪怕是<code>生活博客</code>。</p></blockquote> <h2 id="一、介绍"><a href="#一、介绍" class="header-anchor">#</a> 一、介绍</h2> <blockquote><p><strong>VuePress</strong> 是尤雨溪发布的一个全新的基于 vue 的静态网站生成器，实际上就是一个 vue 的 spa 应用，内置 webpack，可以用来写文档。详见 <a href="https://vuepress.docschina.org/" target="_blank" rel="noopener noreferrer">VuePress中文网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <p>**VuePress **由两部分组成：第一部分是一个<a href="https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/core" target="_blank" rel="noopener noreferrer">极简静态网站生成器 (opens new window)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，它包含由 Vue 驱动的<a href="https://vuepress.vuejs.org/zh/theme/" target="_blank" rel="noopener noreferrer">主题系统<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>和<a href="https://vuepress.vuejs.org/zh/plugin/" target="_blank" rel="noopener noreferrer">插件 API<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，另一个部分是为书写技术文档而优化的<a href="https://vuepress.vuejs.org/zh/theme/default-theme-config.html" target="_blank" rel="noopener noreferrer">默认主题<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，它的诞生初衷是为了支持 Vue 及其子项目的文档需求。</p></blockquote> <p><strong>VuePress</strong> 有很多优点：</p> <ul><li>界面简洁优雅（个人感觉比 HEXO 好看）</li> <li>容易上手（半小时能搭好整个项目）</li> <li>更好的兼容、扩展 Markdown 语法</li> <li>响应式布局，PC端、手机端</li></ul> <h2 id="二、开始创建"><a href="#二、开始创建" class="header-anchor">#</a> 二、开始创建</h2> <ol><li><p><strong>创建博客文件</strong></p> <blockquote><p>创建blog文件夹，也可以使用 mkdir 命令新建</p></blockquote> <div class="language-c++ line-numbers-mode"><pre class="language-text"><code>mkdir blog
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p><strong>本地安装VuePress</strong></p> <div class="language-node line-numbers-mode"><pre class="language-text"><code>npm install -D vuepress
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p><strong>初始化项目</strong></p> <blockquote><p>进入blog文件夹，使用 <code>npm init</code> 或 <code>npm init -y</code>（默认yes）</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm init
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>初始化完成，会生成<code>package.json</code>文件。</p></li> <li><p><strong>创建配置文件和文件夹</strong></p> <blockquote><p>（1）创建文件夹<code>.vuepress</code></p> <p>（2）进入<code>.vuepress</code>文件夹，创建<code>public</code>文件夹，创建<code>config.js</code>文件</p></blockquote> <p><em>至此文件结构为：</em></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code>blog
+├───.vuepress
+│     ├── public		<span class="token comment">// 静态资源文件</span>
+│     └── config.js		<span class="token comment">// 博客首页</span>
+└── package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></li> <li><p><strong>创建首页</strong></p> <blockquote><p>创建<code>index.md</code>首页文件。</p></blockquote> <div class="language-json line-numbers-mode"><pre class="language-json"><code>---
+home<span class="token operator">:</span> <span class="token boolean">true</span>
+heroImage<span class="token operator">:</span> /assets/images/logo.png
+heroText<span class="token operator">:</span> 博客标题
+tagline<span class="token operator">:</span> 博客副标题
+actionText<span class="token operator">:</span> 快速阅读
+actionLink<span class="token operator">:</span> /vue/scrollNumberTop
+features<span class="token operator">:</span>
+- title<span class="token operator">:</span> 主页
+  details<span class="token operator">:</span> 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+- title<span class="token operator">:</span> Vue插件
+  details<span class="token operator">:</span> Mischieff为你提供Vue组件，让你的项目炫炫炫！！！
+- title<span class="token operator">:</span> 其他
+  details<span class="token operator">:</span> Mischieff为你提供一起适配方式及解决方案，没错还是让你爽到爆。
+footer<span class="token operator">:</span> Mischieff 前端菜鸟提供
+---
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><blockquote><p>配置后，第9步运行完成，对应的首页渲染效果为：</p></blockquote> <p><img src="/blog/assets/images/VuePress/image-20210111182529913.png" alt="image-20210111182529913"></p></li> <li><p><strong>创建网页文件</strong>（根据所需，自由创建）</p> <blockquote><p>创建<code>doc</code>文件夹，创建页面文件<code>analysis.md</code></p></blockquote> <p><em>至此文件结构为：</em></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code>blog
+├───.vuepress
+│	├── public		 <span class="token comment">// 静态资源文件</span>
+│	└── config.js	  <span class="token comment">// 博客首页</span>
+├───doc				<span class="token comment">// 文档</span>
+│	└── analysis.md	  <span class="token comment">// 分析交流会页面</span>
+└── package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></li> <li><p><strong>config.js文件配置</strong></p> <blockquote><p>进入<code>.vuepress/config.js</code>，配置<code>config.js</code>文件</p></blockquote> <div class="language-json line-numbers-mode"><pre class="language-json"><code>module.exports = <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> 'Mischieff'<span class="token punctuation">,</span>
+  base<span class="token operator">:</span> '/blog/'<span class="token punctuation">,</span>
+  description<span class="token operator">:</span> '前端技术分享交流会'<span class="token punctuation">,</span>
+  head<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      'link'<span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        rel<span class="token operator">:</span> 'icon'<span class="token punctuation">,</span>
+        href<span class="token operator">:</span> '/assets/images/logo.png'<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 增加一个自定义的 favicon(网页标签的图标)</span>
+    <span class="token punctuation">[</span>
+      'meta'<span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        name<span class="token operator">:</span> 'author'<span class="token punctuation">,</span>
+        content<span class="token operator">:</span> 'Mischieff'<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 作者</span>
+    <span class="token punctuation">[</span>
+      'meta'<span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        name<span class="token operator">:</span> 'keywords'<span class="token punctuation">,</span>
+        content<span class="token operator">:</span> 'vue<span class="token punctuation">,</span>前端技术分享交流会<span class="token punctuation">,</span>mis'<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 关键词</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  markdown<span class="token operator">:</span> <span class="token punctuation">{</span>
+    lineNumbers<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 代码块显示行号</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  host<span class="token operator">:</span> 'localhost'<span class="token punctuation">,</span> <span class="token comment">// ip</span>
+  port<span class="token operator">:</span> <span class="token number">8098</span><span class="token punctuation">,</span> <span class="token comment">// 端口</span>
+  evergreen<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 浏览器兼容性</span>
+  <span class="token comment">// 使用的主题</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    logo<span class="token operator">:</span> '/assets/images/logo.png'<span class="token punctuation">,</span>
+    sidebar<span class="token operator">:</span> 'auto'<span class="token punctuation">,</span> <span class="token comment">// 按照md标题，自动生成侧边栏</span>
+    lastUpdated<span class="token operator">:</span> '更新时间'<span class="token punctuation">,</span> <span class="token comment">// 更新时间</span>
+    nav<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> '主页'<span class="token punctuation">,</span>
+        link<span class="token operator">:</span> '/'<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> '文件'<span class="token punctuation">,</span>
+        items<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            text<span class="token operator">:</span> '前端分析交流'<span class="token punctuation">,</span>
+            link<span class="token operator">:</span> '/doc/analysis'<span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            text<span class="token operator">:</span> 'Emoji 表情'<span class="token punctuation">,</span>
+            link<span class="token operator">:</span> '/doc/emoji'<span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> 'Github'<span class="token punctuation">,</span>
+        link<span class="token operator">:</span> 'https<span class="token operator">:</span><span class="token comment">//github.com/mischieff',</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    sidebar<span class="token operator">:</span> <span class="token punctuation">{</span>
+      '/doc/'<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          title<span class="token operator">:</span> '文件'<span class="token punctuation">,</span>
+          collapsable<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+          children<span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              title<span class="token operator">:</span> '前端分析交流'<span class="token punctuation">,</span>
+              path<span class="token operator">:</span> '/doc/analysis'<span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              title<span class="token operator">:</span> 'Emoji 表情'<span class="token punctuation">,</span>
+              path<span class="token operator">:</span> '/doc/emoji'<span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      '@vuepress/last-updated'<span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        transformer<span class="token operator">:</span> (timestamp<span class="token punctuation">,</span> lang) =&gt; <span class="token punctuation">{</span>
+          <span class="token comment">// 页面底部更新时间格式化</span>
+          <span class="token comment">// 不要忘了安装 ：npm install moment</span>
+          const moment = require('moment');
+          moment.locale('zh-cn');
+          return moment(timestamp).format('LLL');
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br></div></div><blockquote><p>配置后，第9步运行完成，对应的head渲染效果为：</p></blockquote> <p><img src="/blog/assets/images/VuePress/image-20210111180250656.png" alt="image-20210111180250656"></p> <blockquote><p>配置后，第9步运行完成，对应的导航菜单渲染效果为：</p></blockquote> <p><img src="/blog/assets/images/VuePress/image-20210111180100453.png" alt="image-20210111180100453"></p></li> <li><p><strong>配置package.json</strong></p> <blockquote><p>进入<code>package.json</code>，配置<code>scripts</code>启动文件。</p></blockquote> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;deploy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bash deploy.sh&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></li> <li><p><strong>启动博客</strong></p> <blockquote><p>启动博客，浏览器查看<code>http://localhost:8080/blog/</code>。</p></blockquote> <div class="language-node line-numbers-mode"><pre class="language-text"><code>npm run dev
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ol> <h2 id="三、部署"><a href="#三、部署" class="header-anchor">#</a> 三、部署</h2> <blockquote><p>现在我们要把本地的内容推送到某个服务器上，这样只要有网络，就可以随时随地看自己的网站了。一般来说，有两种方案可供选择：</p></blockquote> <ul><li><p>自己买一个服务器，阿里云、腾讯云等，这种方式的好处是速度有保证、可以被搜索引擎收录。</p></li> <li><p>使用 <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">Github Pages<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 。简单说就是 <code>Github</code>提供的，用于搭建个人网站的静态站点托管服务。很多人用它搭建个人博客。这种方式的好处是免费、方便，坏处是速度可能会有些慢、不能被国内的搜索引擎收录。</p></li></ul> <p>下面将给大家讲解如何使用 <code>Github Pages</code>服务。</p> <ol><li><p><strong>登录Github</strong></p> <blockquote><p>登录自己的Github，点击如图所示<code>新建</code>按钮，或者点击右上角<code>+按钮</code>进行新建。</p></blockquote> <p><img src="/blog/assets/images/VuePress/image-20210112114930604.png" alt="image-20210112114930604"></p></li> <li><p><strong>创建项目</strong></p></li></ol> <blockquote><p>填写如图所示资料，点击创建。</p> <p><strong>注意</strong>：<strong><code>创建的项目名和文件名一致</code></strong></p></blockquote> <p><img src="/blog/assets/images/VuePress/image-20210112115200943.png" alt="image-20210112115200943"></p> <ol start="3"><li><p><strong>创建git忽略文件</strong> `</p> <blockquote><p>创建<code>.gitignore</code>文件。内容如下</p></blockquote> <div class="language-json line-numbers-mode"><pre class="language-json"><code>node_modules/
+.vuepress/dist
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p><strong>上传文件</strong></p></li></ol> <blockquote><p>上传文件至<code>Github</code>上，命令如下：</p></blockquote> <div class="language-c++ line-numbers-mode"><pre class="language-text"><code> git add .
+ git commit -m &quot;提交内容&quot;
+ git push -u origin master
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ol start="5"><li><strong>创建应用脚本文件</strong></li></ol> <blockquote><p>创建应用脚本文件<code>deploy.sh</code>。</p></blockquote> <div class="language-java line-numbers-mode"><pre class="language-java"><code># 确保脚本抛出遇到的错误
+set <span class="token operator">-</span>e
+
+# 生成静态文件
+npm run build
+
+# 进入生成的文件夹
+cd <span class="token punctuation">.</span>vuepress<span class="token operator">/</span>dist
+
+git init
+git add <span class="token operator">-</span><span class="token class-name">A</span>
+git commit <span class="token operator">-</span>m <span class="token string">'deploy'</span>
+
+# 如果发布到 https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token generics"><span class="token punctuation">&lt;</span>USERNAME<span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>github<span class="token punctuation">.</span>iyarn docs<span class="token operator">:</span>devo
+# git push <span class="token operator">-</span>f git<span class="token annotation punctuation">@github.com</span><span class="token operator">:</span>mischieff<span class="token operator">/</span>blog<span class="token punctuation">.</span>github<span class="token punctuation">.</span>io<span class="token punctuation">.</span>git master
+
+# 如果发布到 https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token generics"><span class="token punctuation">&lt;</span>USERNAME<span class="token punctuation">&gt;</span></span><span class="token punctuation">.</span>github<span class="token punctuation">.</span>io<span class="token operator">/</span><span class="token generics"><span class="token punctuation">&lt;</span>REPO<span class="token punctuation">&gt;</span></span>
+git push <span class="token operator">-</span>f git<span class="token annotation punctuation">@github.com</span><span class="token operator">:</span>mischieff<span class="token operator">/</span>blog<span class="token punctuation">.</span>git master<span class="token operator">:</span>gh<span class="token operator">-</span>pages
+
+cd <span class="token operator">-</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><ol start="6"><li><strong>部署</strong></li></ol> <blockquote><p>运行deploy命令进行上传部署。</p></blockquote> <div class="language-json line-numbers-mode"><pre class="language-json"><code>npm run deploy
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="7"><li><strong>查看部署配置确保运行</strong></li></ol> <blockquote><p>打开Git，进入刚上传的目录中，点击<code>Settings</code>进行配置。</p></blockquote> <p><img src="/blog/assets/images/VuePress/image-20210112175336735.png" alt="image-20210112160144554"></p> <blockquote><p>在<code>Options</code>，设置<code>Source</code>,确保切换在<code>gh-pages</code>分支上。</p> <p>当出现如图所示绿勾时 ✔️ 说明部署成功。</p></blockquote> <p><img src="/blog/assets/images/VuePress/image-20210112160343301.png" alt="image-20210112160343301"></p> <ol start="8"><li><strong>完成部署</strong></li></ol> <blockquote><p>此刻就可以进入自己的博客**<code>https://mischieff.github.io/blog/</code>**，尽情的欣赏自己的作品吧！！！</p></blockquote> <p><img src="/blog/assets/images/VuePress/image-20210112160929682.png" alt="image-20210112160929682"></p> <p><img src="/blog/assets/images/VuePress/image-20210112160951795.png" alt="image-20210112160951795"></p> <h2 id="四、其他"><a href="#四、其他" class="header-anchor">#</a> 四、其他</h2> <ol><li><p><strong>图片</strong></p> <blockquote><p>图片文件夹路径 <code>.vuepress/public/</code> 一般创建<code>images</code>文件夹</p> <p>更改路径 <code>/blog/assets/images/</code></p></blockquote> <div class="language-json line-numbers-mode"><pre class="language-json"><code>!<span class="token punctuation">[</span>image<span class="token number">-20210112160951795</span><span class="token punctuation">]</span>(/blog/assets/images/image<span class="token number">-20210112160951795</span>.png)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p><strong>配置颜色及样式</strong></p></li></ol> <blockquote><p>在<code>.vuepress/styles/palette</code>.创建主题文件，修改主题配置文件。</p></blockquote> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token comment">/*********************************** 全局配置 ***************************************/</span>
+// 颜色
+$accentColor = #42b983  // 默认主题颜色
+$textColor = #2c3e50    // 默认字体颜色
+$borderColor = #eaecef  // 默认边框颜色
+$codeBgColor = #f9f9f9  // 默认代码背景颜色
+$arrowBgColor = #ccc    // 默认箭头颜色
+$badgeTipColor = #42b983   
+$badgeWarningColor = <span class="token function">darken</span><span class="token punctuation">(</span>#ffe564<span class="token punctuation">,</span> 35%<span class="token punctuation">)</span>
+$badgeErrorColor = #DA5961
+
+// 布局
+$navbarHeight = 3.6rem  // 默认导航高度
+$sidebarWidth = 20rem   // 默认左侧导航宽度
+$contentWidth = 760px   // 默认详情页宽度
+$homePageWidth = 960px  // 默认首页宽度
+
+// 响应式变化点
+$MQNarrow = 959px   
+$MQMobile = 719px
+$MQMobileNarrow = 419px
+<span class="token comment">/*********************************** 更改样式 ***************************************/</span>
+<span class="token selector">// 标注
+   blockquote</span><span class="token punctuation">{</span>
+       <span class="token property">border-left</span><span class="token punctuation">:</span> 4px solid #42b983<span class="token punctuation">;</span>
+       <span class="token property">padding</span><span class="token punctuation">:</span> 10px 15px<span class="token punctuation">;</span>
+       <span class="token property">color</span><span class="token punctuation">:</span> #777<span class="token punctuation">;</span>
+       <span class="token property">font-size</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+       <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>66<span class="token punctuation">,</span> 185<span class="token punctuation">,</span> 131<span class="token punctuation">,</span> .1<span class="token punctuation">)</span><span class="token selector">;
+       code</span><span class="token punctuation">{</span>
+           <span class="token property">margin</span><span class="token punctuation">:</span> 0 2px<span class="token important">!important</span><span class="token punctuation">;</span>
+           <span class="token property">padding</span><span class="token punctuation">:</span> 2px 4px<span class="token important">!important</span><span class="token punctuation">;</span>
+           <span class="token property">border-radius</span><span class="token punctuation">:</span> 2px<span class="token important">!important</span><span class="token punctuation">;</span>
+           <span class="token property">font-family</span><span class="token punctuation">:</span> Roboto Mono<span class="token punctuation">,</span> Source Sans Pro<span class="token punctuation">,</span> Monaco<span class="token punctuation">,</span> courier<span class="token punctuation">,</span> monospace <span class="token important">!important</span><span class="token punctuation">;</span>
+           <span class="token property">font-size</span><span class="token punctuation">:</span> 0.92rem<span class="token important">!important</span><span class="token punctuation">;</span>
+           <span class="token property">color</span><span class="token punctuation">:</span> #e96900<span class="token important">!important</span><span class="token punctuation">;</span>
+           <span class="token property">background-color</span><span class="token punctuation">:</span> #f8f8f8<span class="token important">!important</span><span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+
+   <span class="token selector">// 代码块
+   div[class*=&quot;language-&quot;].line-numbers-mode::after</span><span class="token punctuation">{</span>
+       <span class="token property">border</span><span class="token punctuation">:</span>none<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token selector">div[class*=&quot;language-&quot;].line-numbers-mode .line-numbers-wrapper</span><span class="token punctuation">{</span>
+       <span class="token property">color</span><span class="token punctuation">:</span>#999<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token selector">.theme-default-content pre code, .theme-default-content pre[class*=&quot;language-&quot;] code</span><span class="token punctuation">{</span>
+       <span class="token property">color</span><span class="token punctuation">:</span>#f08d49<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+
+   <span class="token selector">li</span><span class="token punctuation">{</span>
+       <span class="token property">font-size</span><span class="token punctuation">:</span>15px<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br></div></div><ol start="3"><li><strong>更换主题</strong></li></ol> <blockquote><p>以阿里的<code>AntDocs</code>为例，确保vuepress为<code>本地安装</code>。</p> <p>首先安装<code>vuepress-theme-antdocs</code>主题</p></blockquote> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token comment">// 安装主题</span>
+npm i vuepress-theme-antdocs
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><blockquote><p>打开 <code>.vuepress/config.js</code> 文件，然后在合适位置引用它。</p></blockquote> <div class="language-json line-numbers-mode"><pre class="language-json"><code>  module.exports = <span class="token punctuation">{</span>
+     ...
+     theme<span class="token operator">:</span> 'antdocs'<span class="token punctuation">,</span>
+     ...
+   <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ol start="4"><li><p><strong>vuePress二级目录</strong></p> <blockquote><p>详情页右侧二级目录，只能显示Markdown中的二级标签，即<code>##</code>两个井号的目录</p></blockquote></li></ol> <p><img src="/blog/assets/images/VuePress/image-20210207151110373.png" alt="image-20210207151110373"></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2021年7月21日下午4点21分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/doc/Qiankun.html" class="prev"><i aria-label="icon: left" class="anticon anticon-left"><svg viewBox="64 64 896 896" focusable="false" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"></path></svg></i>
+        《微前端（Qiankun）》
+      </a></span> <span class="next"><a href="/blog/doc/Nodejs.html">
+        《Nodejs初识》
+        <i aria-label="icon: right" class="anticon anticon-right"><svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"></path></svg></i></a></span></p></div> </main> <!----></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.d0acf852.js" defer></script><script src="/blog/assets/js/2.72c4cc30.js" defer></script><script src="/blog/assets/js/13.d6ea9d45.js" defer></script>
+  </body>
+</html>

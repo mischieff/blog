@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>《Electron桌面应用（初识）》 | Mischieff技术分享交流</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/blog/assets/images/logo.png">
+    <meta name="description" content="前端技术分享交流会">
+    <meta name="author" content="Mischieff">
+    <meta name="keywords" content="vue,前端技术分享交流会,mis">
+    <link rel="preload" href="/blog/assets/css/0.styles.ce5bf294.css" as="style"><link rel="preload" href="/blog/assets/js/app.d0acf852.js" as="script"><link rel="preload" href="/blog/assets/js/2.72c4cc30.js" as="script"><link rel="preload" href="/blog/assets/js/5.07d818df.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.5014fd50.js"><link rel="prefetch" href="/blog/assets/js/11.8b9de7e2.js"><link rel="prefetch" href="/blog/assets/js/12.b8a53940.js"><link rel="prefetch" href="/blog/assets/js/13.d6ea9d45.js"><link rel="prefetch" href="/blog/assets/js/14.2377e15c.js"><link rel="prefetch" href="/blog/assets/js/15.57c75a61.js"><link rel="prefetch" href="/blog/assets/js/3.6915d159.js"><link rel="prefetch" href="/blog/assets/js/4.2b1304f1.js"><link rel="prefetch" href="/blog/assets/js/6.acdb2a2d.js"><link rel="prefetch" href="/blog/assets/js/7.22a77f1e.js"><link rel="prefetch" href="/blog/assets/js/8.029b509f.js"><link rel="prefetch" href="/blog/assets/js/9.114dad7d.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.ce5bf294.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="ant-row"><div class="sidebar-button"><i aria-label="icon: bars" class="anticon anticon-bars"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="bars" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"></path></svg></i> <span></span></div> <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a href="/blog/" class="router-link-active home-link"><img src="/blog/assets/images/logo.png" alt="Mischieff技术分享交流" class="logo"> <span class="site-name">Mischieff技术分享交流</span></a> <div class="search-box mobile-search"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div> <div class="ant-col ant-col-xs-0 ant-col-sm-0 ant-col-md-18 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><ul role="menu" id="nav" class="ant-menu ant-menu-horizontal ant-menu-root ant-menu-light"><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/blog/" class="router-link-active">
+          主页
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-submenu-selected"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          文件
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="https://github.com/mischieff" target="_blank">
+          Github
+          <i aria-label="icon: link" class="anticon anticon-link"><svg viewBox="64 64 896 896" focusable="false" data-icon="link" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"></path></svg></i></a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="visibility:hidden;position:absolute;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li></ul> <!----></nav></div></div> <!----></header> <aside class="sidebar"><!----> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>文件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/doc/Qiankun.html" title="《微前端（Qiankun）》" class="sidebar-link">《微前端（Qiankun）》</a></li><li><a href="/blog/doc/VuePress.html" title="《Markdown搭建前端博客（VuePress）》" class="sidebar-link">《Markdown搭建前端博客（VuePress）》</a></li><li><a href="/blog/doc/Nodejs.html" title="《Nodejs初识》" class="sidebar-link">《Nodejs初识》</a></li><li><a href="/blog/doc/Uniapp.html" title="《uniapp初识》" class="sidebar-link">《uniapp初识》</a></li><li><a href="/blog/doc/React.html" title="《React初识》" class="sidebar-link">《React初识》</a></li><li><a href="/blog/doc/SourceTree.html" title="《版本管理git回滚、重置、提交以及SourceTree复杂操作》" class="sidebar-link">《版本管理git回滚、重置、提交以及SourceTree复杂操作》</a></li><li><a href="/blog/doc/Typora.html" title="《Typora的使用（markdown标记语言）》" class="sidebar-link">《Typora的使用（markdown标记语言）》</a></li><li><a href="/blog/doc/Electron.html" aria-current="page" title="《Electron桌面应用初识》" class="active sidebar-link">《Electron桌面应用初识》</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/doc/Electron.html#一、electron介绍" title="一、electron介绍" class="sidebar-link">一、electron介绍</a></li><li class="sidebar-sub-header"><a href="/blog/doc/Electron.html#二、electron目录介绍" title="二、electron目录介绍" class="sidebar-link">二、electron目录介绍</a></li><li class="sidebar-sub-header"><a href="/blog/doc/Electron.html#三、electron中package-js详解" title="三、electron中package.js详解" class="sidebar-link">三、electron中package.js详解</a></li><li class="sidebar-sub-header"><a href="/blog/doc/Electron.html#四、electron中mian-js入口文件详解" title="四、electron中mian.js入口文件详解" class="sidebar-link">四、electron中mian.js入口文件详解</a></li><li class="sidebar-sub-header"><a href="/blog/doc/Electron.html#五、electron应用菜单" title="五、electron应用菜单" class="sidebar-link">五、electron应用菜单</a></li></ul></li><li><a href="/blog/doc/Nginx.html" title="《nginx代理vue技术分享》" class="sidebar-link">《nginx代理vue技术分享》</a></li><li><a href="/blog/doc/emoji.html" title="《Emoji 表情》" class="sidebar-link">《Emoji 表情》</a></li></ul></section></li></ul></aside> <main class="page"> <div class="theme-antdocs-content content__default"><h1 id="《electron桌面应用-初识-》"><a href="#《electron桌面应用-初识-》" class="header-anchor">#</a> 《Electron桌面应用（初识）》</h1> <div class="cc-speaker-content color3"><span class="cc-speaker">主讲：Mischieff</span> <span class="cc-wrap"><span class="cc-stage">第四期</span></span></div> <p><img src="/blog/assets/images/Electron/image-20201208174017350.png" alt="image-20201208174017350"></p> <h2 id="一、electron介绍"><a href="#一、electron介绍" class="header-anchor">#</a> 一、electron介绍</h2> <p>Electron 是 GitHub 发布的跨平台桌面应用开发工具，支持 Web 技术开发桌面应用，其本身是基于 C++ 开发的，GUI 核心来自于 Chrome，而 JavaScript 引擎使用 v8。</p> <p><code>Electron = Chromium + Node.js + Native API</code></p> <ul><li>Chromium : 为Electron提供了强大的UI能力，可以不考虑兼容性的情况下，利用强大的Web生态来开发界面。</li> <li>Node.js ：让Electron有了底层的操作能力，比如文件的读写，甚至是集成C++等等操作，并可以使用大量开源的<code>npm</code>包来完成开发需求。</li> <li>Native API ： Native API让Electron有了跨平台和桌面端的原生能力，比如说它有统一的原生界面，窗口、托盘这些</li></ul> <blockquote><p>什么时候使用</p></blockquote> <ul><li><p>司没有专门的桌面应用开发者，而需要前端兼顾来进行开发时，用Electron就是一个不错的选择。</p></li> <li><p>一个应用同时开发Web端和桌面端的时候，那使用Electron来进行开发就对了。</p></li> <li><p>开发一些效率工具，比如说我们的VSCode，比如说一些API类的工具，用Electron都是不错的选择。</p></li></ul> <blockquote><p>那些应用是Electron开发的</p></blockquote> <ul><li>VSCode ： 程序员最常用的开发者工具。</li> <li>Atom : 是Github开发的文本编辑器，我想大部分的前端程序员都应该使用过。</li></ul> <blockquote><p>依赖环境</p></blockquote> <ul><li><p>node</p></li> <li><p>npm</p></li> <li><p>electron</p></li></ul> <p><img src="/blog/assets/images/Electron/image-20201208165241279.png" alt="image-20201208165241279"></p> <h2 id="二、electron目录介绍"><a href="#二、electron目录介绍" class="header-anchor">#</a> 二、electron目录介绍</h2> <blockquote><p>https://github.com/PanJiaChen/electron-vue-admin</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>├── .electron-vue 	// electron-vue配置文件
+├── build/icons		// 打包配置文件 （菜单等）
+├── config			// 环境配置
+├── dist			// 打包文件
+├── src				// 资源
+│  	 ├── main		// electron配置文件
+│    ├── renderer	// vue代码
+│	 └── index.ejs	// 入口文件
+├── package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="_2、electron简单版结构目录"><a href="#_2、electron简单版结构目录" class="header-anchor">#</a> 2、electron简单版结构目录</h3> <blockquote><p>https://github.com/mischieff/electron-html</p></blockquote> <div class="language-js line-numbers-mode"><pre class="language-js"><code>├── build 		<span class="token comment">// 打包后exe安装包</span>
+├── main<span class="token punctuation">.</span>js		<span class="token comment">// electron配置文件</span>
+│  	 ├── mainMenu<span class="token punctuation">.</span>js	<span class="token comment">//菜单文件</span>
+├── views		<span class="token comment">// html 文件（css、js、images等）</span>
+├── favicon<span class="token punctuation">.</span>ico	<span class="token comment">// 应用图标</span>
+├── mian<span class="token punctuation">.</span>js		<span class="token comment">// 入口文件</span>
+├── <span class="token keyword">package</span><span class="token punctuation">.</span>json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="三、electron中package-js详解"><a href="#三、electron中package-js详解" class="header-anchor">#</a> 三、electron中package.js详解</h2> <blockquote><p>scripts执行命令</p> <ul><li><code>dev</code>：开发环境</li> <li><code>package</code>：window系统打包</li> <li><code>build:mac</code>：ios系统打包</li> <li><code>build:win</code>：windows系统打包</li></ul></blockquote> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electron . &quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;package&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electron-packager ./ myapp --out ./OutApp --platform=win32 --overwrite --icon=./favicon.ico --overwrite&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build:mac&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electron-builder --platform=mac --arch=x64&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build:win&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electron-builder&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><blockquote><p>build打包</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;build&quot;: {  // electron-builder配置
+    &quot;productName&quot;:&quot;智能约谈&quot;,//项目名 这也是生成的exe文件的前缀名
+    &quot;appId&quot;: &quot;xxxxx&quot;,//包名  
+    &quot;copyright&quot;:&quot;xxxx&quot;,//版权  信息
+    &quot;compression&quot;: &quot;store&quot;, // &quot;store&quot; | &quot;normal&quot;| &quot;maximum&quot; 打包压缩情况(store 相对较快)，store 39749kb, maximum 39186kb
+    &quot;directories&quot;: {
+        &quot;output&quot;: &quot;build&quot; // 输出文件夹
+    }, 
+    &quot;asar&quot;: false, // asar打包
+    &quot;extraResources&quot;:  { // 拷贝dll等静态文件到指定位置
+        &quot;from&quot;: &quot;./app-update.yml&quot;,
+        &quot;to&quot;: &quot;./b.txt&quot;
+    },
+    &quot;win&quot;: {  
+        &quot;icon&quot;: &quot;xxx/icon.ico&quot;//图标路径,
+        &quot;extraResources&quot;:  { // 拷贝dll等静态文件到指定位置(用于某个系统配置)
+            &quot;from&quot;: &quot;./app-update.yml&quot;,
+            &quot;to&quot;: &quot;./b.txt&quot;
+        }
+    },
+    &quot;nsis&quot;: {
+        &quot;oneClick&quot;: false, // 一键安装
+        &quot;guid&quot;: &quot;xxxx&quot;, //注册表名字，不推荐修改
+        &quot;perMachine&quot;: true, // 是否开启安装时权限限制（此电脑或当前用户）
+        &quot;allowElevation&quot;: true, // 允许请求提升。 如果为false，则用户必须使用提升的权限重新启动安装程序。
+        &quot;allowToChangeInstallationDirectory&quot;: true, // 允许修改安装目录
+        &quot;installerIcon&quot;: &quot;./build/icons/aaa.ico&quot;, // 安装图标
+        &quot;uninstallerIcon&quot;: &quot;./build/icons/bbb.ico&quot;, //卸载图标
+        &quot;installerHeaderIcon&quot;: &quot;./build/icons/aaa.ico&quot;, // 安装时头部图标
+        &quot;createDesktopShortcut&quot;: true, // 创建桌面图标
+        &quot;createStartMenuShortcut&quot;: true, // 创建开始菜单图标
+        &quot;shortcutName&quot;: &quot;xxxx&quot; // 图标名称
+    }
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h2 id="四、electron中mian-js入口文件详解"><a href="#四、electron中mian-js入口文件详解" class="header-anchor">#</a> 四、electron中mian.js入口文件详解</h2> <blockquote><p>配置应用生命周期</p></blockquote> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> app<span class="token punctuation">,</span> BrowserWindow <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'electron'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>	<span class="token comment">// 引入控制应用生命周期的模块 app</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> mianWin <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+
+<span class="token comment">//初始化</span>
+app<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'ready'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">//创建主程序窗口</span>
+  mianWin <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BrowserWindow</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    webPreferences<span class="token operator">:</span> <span class="token punctuation">{</span>
+      nodeIntegration<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>	<span class="token comment">//内置浏览器里面不会有module和require全局变量，不能使用nodejs</span>
+      webSecurity<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>	<span class="token comment">// 禁用浏览器的跨域安全特性（同源策略）</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    width<span class="token operator">:</span> <span class="token number">1400</span><span class="token punctuation">,</span>	<span class="token comment">// 应用宽度</span>
+    height<span class="token operator">:</span> <span class="token number">900</span><span class="token punctuation">,</span>	<span class="token comment">// 应该高度</span>
+    backgroundColor<span class="token operator">:</span> <span class="token string">'#010f25'</span><span class="token punctuation">,</span>	<span class="token comment">// 背景色</span>
+    fullscreen<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否全屏</span>
+    frame<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否有边框</span>
+    movable<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否可移动</span>
+    resizable<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//是否可拉伸</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 打开开发工具</span>
+  mianWin<span class="token punctuation">.</span>webContents<span class="token punctuation">.</span><span class="token function">toggleDevTools</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 加载页面文件</span>
+  mianWin<span class="token punctuation">.</span><span class="token function">loadURL</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'file://'</span><span class="token punctuation">,</span> __dirname<span class="token punctuation">,</span> <span class="token string">'./views/index.html'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 关闭窗口</span>
+  mianWin<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'close'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    mianWin <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 加载按钮</span>
+  <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./main/mainMenu.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><h2 id="五、electron应用菜单"><a href="#五、electron应用菜单" class="header-anchor">#</a> 五、electron应用菜单</h2> <blockquote><p>设置应用菜单</p></blockquote> <p><img src="/blog/assets/images/Electron/image-20201208164727241.png" alt="image-20201208164727241"></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> Menu <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'electron'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">let</span> mianMenuTemplate <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        label<span class="token operator">:</span> <span class="token string">&quot;文件&quot;</span><span class="token punctuation">,</span>	<span class="token comment">// 菜单名称</span>
+        submenu<span class="token operator">:</span> <span class="token punctuation">[</span>		 <span class="token comment">// 二级菜单</span>
+            <span class="token punctuation">{</span>
+                label<span class="token operator">:</span> <span class="token string">&quot;新建文件&quot;</span><span class="token punctuation">,</span>	 <span class="token comment">// 二级菜单名称</span>
+                type<span class="token operator">:</span> <span class="token string">&quot;checkbox&quot;</span><span class="token punctuation">,</span>  <span class="token comment">// 二级菜单类型</span>
+                checked<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>	   <span class="token comment">// 二级菜单是否选中</span>
+                accelerator<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>	<span class="token comment">// 快捷键 （win mac）</span>
+                    <span class="token keyword">return</span> <span class="token function">shortcutkey</span><span class="token punctuation">(</span><span class="token string">'ctrl+n'</span><span class="token punctuation">,</span> <span class="token string">'command+n'</span><span class="token punctuation">)</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                <span class="token function-variable function">click</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>		<span class="token comment">// 点击事件</span>
+                    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">666</span><span class="token punctuation">)</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>		
+        label<span class="token operator">:</span> <span class="token string">&quot;编辑&quot;</span>		<span class="token comment">// 菜单名称</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+
+<span class="token comment">// 实例化菜单 </span>
+<span class="token keyword">let</span> mainMenu <span class="token operator">=</span> Menu<span class="token punctuation">.</span><span class="token function">buildFromTemplate</span><span class="token punctuation">(</span>mianMenuTemplate<span class="token punctuation">)</span>
+
+<span class="token comment">// 挂载菜单</span>
+Menu<span class="token punctuation">.</span><span class="token function">setApplicationMenu</span><span class="token punctuation">(</span>mainMenu<span class="token punctuation">)</span>
+
+<span class="token comment">//快捷键函数</span>
+<span class="token keyword">function</span> <span class="token function">shortcutkey</span><span class="token punctuation">(</span><span class="token parameter">winkey<span class="token punctuation">,</span> mackey</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//mac系统和 win系统判断</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>platform <span class="token operator">==</span> <span class="token string">'darwin'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> mackey
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> winkey
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2021年1月29日晚上6点56分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/doc/Typora.html" class="prev"><i aria-label="icon: left" class="anticon anticon-left"><svg viewBox="64 64 896 896" focusable="false" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"></path></svg></i>
+        《Typora的使用（markdown标记语言）》
+      </a></span> <span class="next"><a href="/blog/doc/Nginx.html">
+        《nginx代理vue技术分享》
+        <i aria-label="icon: right" class="anticon anticon-right"><svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"></path></svg></i></a></span></p></div> </main> <!----></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.d0acf852.js" defer></script><script src="/blog/assets/js/2.72c4cc30.js" defer></script><script src="/blog/assets/js/5.07d818df.js" defer></script>
+  </body>
+</html>
